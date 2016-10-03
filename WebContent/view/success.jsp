@@ -11,22 +11,12 @@
 <body>
 	<%--JSP Expression Language --%>
 	<ul>
-		<li>Id:${customer.id}</li>
-		<li>Name:${customer.name}</li>
-		<li>Email:${customer.email}</li>
+		<li>Id : ${customer.id}</li>
+		<li>Password : ${customer.password}</li>
+		<li>Name : ${customer.name}</li>
+		<li>gender : ${customer.gender}</li>
+		<li>Email : ${customer.email}</li>
 	</ul>
 
-	<%--JSTL --%>
-
-	<table style="border: 1px solid red; padding: 10px;">
-
-		<c:forEach var="customer" items="${customerList}">
-			<tr>
-				<td>${customer.id}</td>
-				<td>${customer.name}</td>
-				<td>${customer.email}</td>
-			</tr>
-		</c:forEach>
-	</table>
 </body>
 </html>
